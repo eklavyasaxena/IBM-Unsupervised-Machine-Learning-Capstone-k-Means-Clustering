@@ -30,25 +30,13 @@ also to scrutinize the operations and functionalities of crime dominant venues.
 To examine the above said, following data sources will be used:
 
 **1.  Foursquare API:**
-
     1.  Link: <https://developer.foursquare.com/docs>
-
-    2.  Description: Foursquare API, a location data provider, will be used to
-        make RESTful API calls to retrieve data about venues in different
-        neighborhoods.
+    2.  Description: Foursquare API, a location data provider, will be used to make RESTful API calls to retrieve data about venues in different neighborhoods.
 
 **2.  New York City Dataset**
-
     1.  Link: <https://cocl.us/new_york_dataset>
-
-    2.  Description: This dataset will provide the addresses of neighborhood of NYC in json
-        format.
+    2.  Description: This dataset will provide the addresses of neighborhood of NYC in json format.
 
 **3.  NYPD Complaint Data Historic**
-
-    1.  Link:
-        <https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i>
-
-    2.  Description: This dataset includes all valid felony, misdemeanor, and
-        violation crimes reported to the New York City Police Department (NYPD)
-        from 2006 to the end of 2017.
+    1.  Link: <https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i>
+    2.  Description: This dataset includes all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2017.

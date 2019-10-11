@@ -12,6 +12,8 @@ The Battle of Neighborhoods
 -   Use Folium library to great maps of geospatial data and to communicate
     results and findings.
 
+<br/>
+
 **1) Segmenting and Clustering Neighborhoods in Toronto**
 
 - Neighborhoods in the city of Toronto are explored, segmented, and clustered.

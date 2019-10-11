@@ -1,4 +1,6 @@
-## The Battle of Neighborhoods
+The Battle of Neighborhoods
+---------------------------
+
 #### Applied Data Science Capstone - An IBM capstone project course for data scientists, working on real life data.
 
 -   Use location data and different location data providers, such as Foursquare.
@@ -14,9 +16,12 @@
 
 1.  **Segmenting and Clustering Neighborhoods in Toronto**
 
-    Neighborhoods in the city of Toronto are explored, segmented, and clustered.
+-   Neighborhoods in the city of Toronto are explored, segmented, and clustered.
 
-2.  **Categorical Segmentation of NYC Neighborhoods and Crime Rate**
+    To access the notebook - [Click
+    Here](https://nbviewer.jupyter.org/github/eklavyasaxena/The-Battle-of-Neighborhoods/blob/master/Segmenting-and-Clustering-Neighborhoods-in-Toronto/Segmenting-and-Clustering-Neighborhoods-in-Toronto.ipynb)
 
-    Categorically segment the neighborhoods of New York City into major clusters
+1.  **Categorical Segmentation of NYC Neighborhoods and Crime Rate**
+
+-   Categorically segment the neighborhoods of New York City into major clusters
     and examine their respective crime rate

@@ -1,4 +1,4 @@
-## Categorical Segmentation of NYC Neighborhoods and Crime Rate
+## Influence of NYC Neighborhood Venues on Crime Rate
 
 
 ### Introduction
@@ -41,7 +41,7 @@ To examine the above said, following data sources will be used:
 
     1.  Link: <https://cocl.us/new_york_dataset>
 
-    2.  Description: Provides the addresses of neighborhood of NYC in json
+    2.  Description: This dataset will provide the addresses of neighborhood of NYC in json
         format.
 
 3.  NYPD Complaint Data Historic

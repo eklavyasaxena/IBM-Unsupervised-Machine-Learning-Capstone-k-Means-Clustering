@@ -1,7 +1,7 @@
 ## Categorical Segmentation of NYC Neighborhoods and Crime Rate
 
 
-**Introduction**
+### Introduction
 
 *New York City is the most populous city in the United States, home to the
 headquarters of the United Nations and an important center for international
@@ -24,7 +24,8 @@ believe that this revelation or relationship between venues and crime rates will
 help **New York Police Department (NYPD)** to not only increase surveillance but
 also to scrutinize the operations and functionalities of crime dominant venues.
 
-**Data**
+
+### Data
 
 To examine the above said, following data sources will be used:
 

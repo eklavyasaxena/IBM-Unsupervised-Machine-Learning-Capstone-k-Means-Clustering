@@ -1,7 +1,7 @@
-## Influence of NYC Neighborhood Venues on Crime Rate
+# Influence of NYC Neighborhood Venues on Crime Rate
 
 
-### Introduction
+## Introduction
 
 *New York City is the most populous city in the United States, home to the
 headquarters of the United Nations and an important center for international
@@ -25,11 +25,11 @@ help **New York Police Department (NYPD)** to not only increase surveillance but
 also to scrutinize the operations and functionalities of crime dominant venues.
 
 
-### Data
+## Data
 
 To examine the above said, following data sources will be used:
 
-1.  Foursquare API:
+**1.  Foursquare API:**
 
     1.  Link: <https://developer.foursquare.com/docs>
 
@@ -37,14 +37,14 @@ To examine the above said, following data sources will be used:
         make RESTful API calls to retrieve data about venues in different
         neighborhoods.
 
-2.  New York City Dataset
+**2.  New York City Dataset**
 
     1.  Link: <https://cocl.us/new_york_dataset>
 
     2.  Description: This dataset will provide the addresses of neighborhood of NYC in json
         format.
 
-3.  NYPD Complaint Data Historic
+**3.  NYPD Complaint Data Historic**
 
     1.  Link:
         <https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i>

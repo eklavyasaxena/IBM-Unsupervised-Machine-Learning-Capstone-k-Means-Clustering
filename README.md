@@ -1,5 +1,5 @@
-# Coursera_Capstone
-IBM Applied Data Science Capstone Project
+# Categorical Segmentation of NYC Neighborhood and It’s Crime Rate
+Applied Data Science Capstone - IBM
 
 * Use location data and different location data providers, such as Foursquare.
 * Make RESTful API calls to the Foursquare API to retrieve data about venues in different neighborhoods around the world.

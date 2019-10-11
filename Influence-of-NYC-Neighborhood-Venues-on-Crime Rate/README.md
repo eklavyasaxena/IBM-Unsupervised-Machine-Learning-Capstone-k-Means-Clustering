@@ -22,7 +22,8 @@ taken forth with a broad category of venues supplemented by Foursquare API. And,
 upon exploration that can be further narrowed down to the most dominant ones. I
 believe that this revelation or relationship between venues and crime rates will
 help **New York Police Department (NYPD)** to not only increase surveillance but
-also to scrutinize the operations and functionalities of crime dominant venues.
+also to scrutinize the operations and functionalities of crime dominant neighborhood's
+venues.
 
 
 ## Data

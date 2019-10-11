@@ -1,4 +1,4 @@
-# Categorical Segmentation of NYC Neighborhood and It’s Crime Rate
+## Categorical Segmentation of NYC Neighborhood and It’s Crime Rate
 Applied Data Science Capstone - IBM
 
 * Use location data and different location data providers, such as Foursquare.

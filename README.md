@@ -22,4 +22,4 @@ The Battle of Neighborhoods
 **2) Exploring the Taste of NYC Neighborhoods**
 
 - The neighborhoods of New York City are categorically segmented into major clusters and their cuisines are examined
-- To access the notebook - [Click Here](https://github.com/eklavyasaxena/The-Battle-of-Neighborhoods/)
+- To access the notebook - [Click Here](https://nbviewer.jupyter.org/github/eklavyasaxena/The-Battle-of-Neighborhoods/blob/master/Exploring-the-Taste-of-NYC-Neighborhoods/Project_Notebook.ipynb)

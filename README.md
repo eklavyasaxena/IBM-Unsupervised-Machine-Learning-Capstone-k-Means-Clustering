@@ -19,7 +19,7 @@ The Battle of Neighborhoods
 - Neighborhoods in the city of Toronto are explored, segmented, and clustered.
 - To access the notebook - [Click Here](https://nbviewer.jupyter.org/github/eklavyasaxena/The-Battle-of-Neighborhoods/blob/master/Segmenting-and-Clustering-Neighborhoods-in-Toronto/Segmenting-and-Clustering-Neighborhoods-in-Toronto.ipynb)
 
-**2) Influence of NYC Neighborhood Venues on Crime Rate**
+**2) Exploring the Taste of NYC Neighborhoods**
 
 - The neighborhoods of New York City are categorically segmented into major clusters and their cuisines are examined
 - To access the notebook - [Click Here](https://github.com/eklavyasaxena/The-Battle-of-Neighborhoods/)

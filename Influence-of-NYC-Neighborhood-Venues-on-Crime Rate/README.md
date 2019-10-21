@@ -1,29 +1,17 @@
-# Influence of NYC Neighborhood Venues on Crime Rate
+# Exploring the Taste of NYC Neighborhoods
 
 
 ## Introduction
 
-*New York City is the most populous city in the United States, home to the
-headquarters of the United Nations and an important center for international
-diplomacy. It just might be the most diverse city on the planet, as it is home
-to over 8.6 million people and over 800 languages.*
+New York City is the most populous city in the United States, home to the headquarters of the United Nations and an important center for international diplomacy. It just might be the most diverse city on the planet, as it is home to over 8.6 million people and over 800 languages.
 
-Undoubtedly, **Public Safety** becomes important for an ethnically diverse
-metropolis. The idea of this project is to categorically segment the
-neighborhoods of New York City into major clusters and examine their respective
-crime rate. A desirable intention is to examine the neighborhood cluster more
-susceptible or prone to criminal activities. Further examination might reveal if
-the crime rate has any positive relationship with nightlife spots, or any
-negative relationship with government building, or vice versa.
+As quoted in an article - [What Food Tells Us About Culture](https://freelymagazine.com/2017/01/07/what-food-tells-us-about-culture/)  
+*"Traditional cuisine is passed down from one generation to the next. It also operates as an expression of cultural identity. Immigrants bring the food of their countries with them wherever they go and cooking traditional food is a way of preserving their culture when they move to new places."*
 
-This project will help to understand the influence of venues in a neighborhood
-on the regional criminal activities. Exploratory Data Analysis (EDA) will be
-taken forth with a broad category of venues supplemented by Foursquare API. And,
-upon exploration that can be further narrowed down to the most dominant ones. I
-believe that this revelation or relationship between venues and crime rates will
-help **New York Police Department (NYPD)** to not only increase surveillance but
-also to scrutinize the operations and functionalities of crime dominant neighborhood's
-venues.
+Undoubtedly, **Food Diversity** is an important part of an ethnically diverse metropolis. The idea of this project is to categorically segment the neighborhoods of New York City into major clusters and examine their cuisines. A desirable intention is to examine the neighborhood cluster's food habits and taste. Further examination might reveal if food has any relationship with the diversity of a neighborhood.
+
+This project will help to understand the diversity of a neighborhood by leveraging venue data from Foursquare’s ‘Places API’ and ‘k-means clustering’ machine learning algorithm. Exploratory Data Analysis (EDA) will help to discover further about the culture and diversity of the neighborhood.  
+**Stakeholders** would be the one who are interested to use this quantifiable analysis to understand the distribution of different cultures and cuisines over "the most diverse city on the planet - NYC". Also, this project can be utilized by a new food vendor who is willing to open his or her restaurant. Or by a government authority to examine and study their city's culture diversity better.
 
 
 ## Data
@@ -54,7 +42,7 @@ To examine the above said, following data sources will be used:
 
 2.  **Foursquare API:**
     1.  Link: <https://developer.foursquare.com/docs>
-    2.  Description: Foursquare API, a location data provider, will be used to make RESTful API calls to retrieve data about venues in different neighborhoods. This is the link to [Foursquare Venue Category Hierarchy](https://developer.foursquare.com/docs/resources/categories). Venues retrieved from all the neighborhoods will be categorized broadly into "Arts & Entertainment", "College & University", "Event", "Food", "Nightlife Spot", "Outdoors & Recreation", etc. An extract of an API call is as follows:
+    2.  Description: Foursquare API, a location data provider, will be used to make RESTful API calls to retrieve data about venues in different neighborhoods. This is the link to [Foursquare Venue Category Hierarchy](https://developer.foursquare.com/docs/resources/categories). Venues retrieved from all the neighborhoods are categorized broadly into "Arts & Entertainment", "College & University", "Event", "Food", "Nightlife Spot", "Outdoors & Recreation", etc. An extract of an API call is as follows:
 ```
 	'categories': [{'id': '4bf58dd8d48988d110941735',
 	   'name': 'Italian Restaurant',
@@ -72,45 +60,3 @@ To examine the above said, following data sources will be used:
 	'groups': [{'type': 'others', 'count': 30, 'items': []}],
 	'summary': '30 Likes'},
 ```
-
-
-3.  **NYPD Complaint Data Historic**
-    1.  Link: <https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i>
-    2.  Description: This dataset includes all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2017. Intent would be to create choropleth map of crimes in the city using the latitude and longitude data provided. Field Names and Descriptions are as follows:
-
-		| **Field Name**    | **Description**                                                                                                                                           |
-		|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-		| CMPLNT_NUM        | Randomly generated persistent ID for each complaint                                                                                                       |
-		| ADDR_PCT_CD       | The precinct in which the incident occurred                                                                                                               |
-		| BORO              | The name of the borough in which the incident occurred                                                                                                    |
-		| CMPLNT_FR_DT      | Exact date of occurrence for the reported event (or starting date of occurrence, if CMPLNT_TO_DT exists)                                                  |
-		| CMPLNT_FR_TM      | Exact time of occurrence for the reported event (or starting time of occurrence, if CMPLNT_TO_TM exists)                                                  |
-		| CMPLNT_TO_DT      | Ending date of occurrence for the reported event, if exact time of occurrence is unknown                                                                  |
-		| CMPLNT_TO_TM      | Ending time of occurrence for the reported event, if exact time of occurrence is unknown                                                                  |
-		| CRM_ATPT_CPTD_CD  | Indicator of whether crime was successfully completed or attempted, but failed or was interrupted prematurely                                             |
-		| HADEVELOPT        | Name of NYCHA housing development of occurrence, if applicable                                                                                            |
-		| HOUSING_PSA       | Development Level Code                                                                                                                                    |
-		| JURISDICTION_CODE | Jurisdiction responsible for incident. Either internal, like Police(0), Transit(1), and Housing(2); or external(3), like Correction, Port Authority, etc. |
-		| JURIS_DESC        | Description of the jurisdiction code                                                                                                                      |
-		| KY_CD             | Three digit offense classification code                                                                                                                   |
-		| LAW_CAT_CD        | Level of offense: felony, misdemeanor, violation                                                                                                          |
-		| LOC_OF_OCCUR_DESC | Specific location of occurrence in or around the premises; inside, opposite of, front of, rear of                                                         |
-		| OFNS_DESC         | Description of offense corresponding with key code                                                                                                        |
-		| PARKS_NM          | Name of NYC park, playground or greenspace of occurrence, if applicable (state parks are not included)                                                    |
-		| PATROL_BORO       | The name of the patrol borough in which the incident occurred                                                                                             |
-		| PD_CD             | Three digit internal classification code (more granular than Key Code)                                                                                    |
-		| PD_DESC           | Description of internal classification corresponding with PD code (more granular than Offense Description)                                                |
-		| PREM_TYP_DESC     | Specific description of premises; grocery store, residence, street, etc.                                                                                  |
-		| RPT_DT            | Date event was reported to police                                                                                                                         |
-		| STATION_NAME      | Transit station name                                                                                                                                      |
-		| SUSP_AGE_GROUP    | Suspect’s Age Group                                                                                                                                       |
-		| SUSP_RACE         | Suspect’s Race Description                                                                                                                                |
-		| SUSP_SEX          | Suspect’s Sex Description                                                                                                                                 |
-		| TRANSIT_DISTRICT  | Transit district in which the offense occurred.                                                                                                           |
-		| VIC_AGE_GROUP     | Victim’s Age Group                                                                                                                                        |
-		| VIC_RACE          | Victim’s Race Description                                                                                                                                 |
-		| VIC_SEX           | Victim’s Sex Description (D=Business/Organization, E=PSNY/People of the State of New York, F=Female, M=Male)                                              |
-		| X_COORD_CD        | X-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)                                                 |
-		| Y_COORD_CD        | Y-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)                                                 |
-		| Latitude          | Midblock Latitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)                                                          |
-		| Longitude         | Midblock Longitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)                                                         |

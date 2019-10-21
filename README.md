@@ -21,5 +21,5 @@ The Battle of Neighborhoods
 
 **2) Influence of NYC Neighborhood Venues on Crime Rate**
 
-- The neighborhoods of New York City are categorically segmented into major clusters and their respective crime rate is examined
-- To access the notebook - [Click Here](https://github.com/eklavyasaxena/The-Battle-of-Neighborhoods/tree/master/2_Categorical-Segmentation-of-NYC-Neighborhoods-and-Crime-Rate)
+- The neighborhoods of New York City are categorically segmented into major clusters and their cuisines are examined
+- To access the notebook - [Click Here](https://github.com/eklavyasaxena/The-Battle-of-Neighborhoods/)
